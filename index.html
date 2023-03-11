@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Arithmetic Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      body{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(#7EE8FA,#EEC0C6);
+
+      }
+      .wrapper{
+        width: 500px;
+        height: 500px;
+        background: linear-gradient(#FBD72B,#F9484A);
+        padding: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+      }
+      label{
+        font-size: 20px;
+        font-weight: 500;
+        color: #fff;
+        margin-right: 15px;
+      }
+      input{
+        border: 0;
+        border-radius: 12px;
+        background: #fff;
+        outline: none;
+        font-size: 18px;
+        padding: 10px;
+      }
+      select{
+        border: 0;
+        border-radius: 12px;
+        background: #fff;
+        outline: none;
+        font-size: 18px;
+        padding: 10px;
+      }
+      button{
+        background: linear-gradient(#7EE8FA,#EEC0C6);
+        border-radius: 15px;
+        color: #000;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 10px 20px;
+        border: 0;
+        outline: none;
+        width: 150px;
+        margin: 15px;
+        text-align: center;
+      }
+      p{
+        font-size: 18px;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div>
+        <label for="num1">Enter number 1:</label>
+        <input type="number" id="num1" name="num1" /><br /><br />
+    
+        <label for="num2">Enter number 2:</label>
+        <input type="number" id="num2" name="num2" /><br /><br />
+    
+        <label for="operator">Select an operator:</label>
+        <select id="operator" name="operator">
+          <option value="">--Select--</option>
+          <option value="+">Addition (+)</option>
+          <option value="-">Subtraction (-)</option>
+          <option value="*">Multiplication (*)</option>
+          <option value="/">Division (/)</option></select
+        ><br /><br />
+    
+        <button onclick="performOperations()">Calculate</button>
+    
+        <p id="result">Result is :</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
